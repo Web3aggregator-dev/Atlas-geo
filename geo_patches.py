@@ -40,8 +40,17 @@ def complete(version_dir: str) -> bool:
     return all(os.path.isfile(os.path.join(version_dir, f)) for f in FILES)
 
 
+def github_request(url: str) -> urllib.request.Request:
+    """В GitHub Actions анонимный лимит API часто исчерпан — подписываем запрос GITHUB_TOKEN."""
+    req = urllib.request.Request(url, headers={"User-Agent": "atlas-geo"})
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    return req
+
+
 def fetch(repo: str) -> None:
-    with urllib.request.urlopen(LATEST_API, timeout=60) as r:
+    with urllib.request.urlopen(github_request(LATEST_API), timeout=60) as r:
         tag = json.load(r)["tag_name"]
     dest = os.path.join(repo, "versions", tag)
     if complete(dest):
@@ -51,8 +60,9 @@ def fetch(repo: str) -> None:
     for name in FILES:
         url = f"{RELEASES}/download/{tag}/{name}"
         part = os.path.join(dest, name + ".part")
-        urllib.request.urlretrieve(url, part)
-        with urllib.request.urlopen(url + ".sha256sum", timeout=60) as r:
+        with urllib.request.urlopen(github_request(url), timeout=600) as r, open(part, "wb") as f:
+            shutil.copyfileobj(r, f)
+        with urllib.request.urlopen(github_request(url + ".sha256sum"), timeout=60) as r:
             want = r.read().decode().split()[0].lower()
         got = sha256_bytes(read(part))
         if got != want:

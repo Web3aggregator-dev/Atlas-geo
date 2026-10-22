@@ -15,7 +15,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install bsdiff4
-      - run: |
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           python geo_patches.py fetch .
           python geo_patches.py build . --keep 7
       - run: |
