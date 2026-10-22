@@ -1,0 +1,26 @@
+# Раз в сутки: скачать свежий релиз Loyalsoldier, собрать патчи и манифест, закоммитить public/ и versions/.
+name: geo
+on:
+  schedule:
+    - cron: "40 22 * * *"   # через ~30 мин после ежедневного релиза Loyalsoldier (22:0x UTC)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install bsdiff4
+      - run: |
+          python geo_patches.py fetch .
+          python geo_patches.py build . --keep 7
+      - run: |
+          git config user.name "geo-bot"
+          git config user.email "geo-bot@users.noreply.github.com"
+          git add public versions
+          git diff --cached --quiet || git commit -m "geo: $(python -c 'import json;print(json.load(open("public/manifest.json"))["version"])')"
+          git push
