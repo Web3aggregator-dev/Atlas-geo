@@ -1,83 +1,101 @@
 {
- "version": "202611012203",
+ "version": "202611022204",
  "files": {
   "geoip.dat": {
-   "sha256": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
-   "size": 16549675,
-   "url": "full/202611012203/geoip.dat",
+   "sha256": "06c1d50d0013af57ffe78c5af93f0dc6aa998890f3ee231393816f9117810c4a",
+   "size": 16546071,
+   "url": "full/202611022204/geoip.dat",
    "patches": [
     {
      "from": "a6271d3c96361d96156e6d3f7cf1550ef21b00d2f951deb772f464db91e89ac5",
-     "url": "patches/202610242205-202611012203.geoip.dat.bsdiff",
-     "sha256": "b3e9ca4ec7796d7c8a2534161916be3c3cc161639d04c792239d547c1dc641f1",
-     "size": 48797
+     "url": "patches/202610262207-202611022204.geoip.dat.bsdiff",
+     "sha256": "3b2b91b550202f700bd07ac72b6c17258553f26c617e188f795d47e0ee22fece",
+     "size": 49233
     },
     {
      "from": "a6271d3c96361d96156e6d3f7cf1550ef21b00d2f951deb772f464db91e89ac5",
-     "url": "patches/202610262207-202611012203.geoip.dat.bsdiff",
-     "sha256": "b3e9ca4ec7796d7c8a2534161916be3c3cc161639d04c792239d547c1dc641f1",
-     "size": 48797
+     "url": "patches/202610272204-202611022204.geoip.dat.bsdiff",
+     "sha256": "3b2b91b550202f700bd07ac72b6c17258553f26c617e188f795d47e0ee22fece",
+     "size": 49233
     },
     {
      "from": "a6271d3c96361d96156e6d3f7cf1550ef21b00d2f951deb772f464db91e89ac5",
-     "url": "patches/202610272204-202611012203.geoip.dat.bsdiff",
-     "sha256": "b3e9ca4ec7796d7c8a2534161916be3c3cc161639d04c792239d547c1dc641f1",
-     "size": 48797
+     "url": "patches/202610282204-202611022204.geoip.dat.bsdiff",
+     "sha256": "3b2b91b550202f700bd07ac72b6c17258553f26c617e188f795d47e0ee22fece",
+     "size": 49233
     },
     {
-     "from": "a6271d3c96361d96156e6d3f7cf1550ef21b00d2f951deb772f464db91e89ac5",
-     "url": "patches/202610282204-202611012203.geoip.dat.bsdiff",
-     "sha256": "b3e9ca4ec7796d7c8a2534161916be3c3cc161639d04c792239d547c1dc641f1",
-     "size": 48797
+     "from": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
+     "url": "patches/202610292204-202611022204.geoip.dat.bsdiff",
+     "sha256": "45a99d58895e0340b0ec66fea4fd3494ca820316c73dfec39b680a953a477026",
+     "size": 1061
+    },
+    {
+     "from": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
+     "url": "patches/202610302203-202611022204.geoip.dat.bsdiff",
+     "sha256": "45a99d58895e0340b0ec66fea4fd3494ca820316c73dfec39b680a953a477026",
+     "size": 1061
+    },
+    {
+     "from": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
+     "url": "patches/202610312203-202611022204.geoip.dat.bsdiff",
+     "sha256": "45a99d58895e0340b0ec66fea4fd3494ca820316c73dfec39b680a953a477026",
+     "size": 1061
+    },
+    {
+     "from": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
+     "url": "patches/202611012203-202611022204.geoip.dat.bsdiff",
+     "sha256": "45a99d58895e0340b0ec66fea4fd3494ca820316c73dfec39b680a953a477026",
+     "size": 1061
     }
    ]
   },
   "geosite.dat": {
-   "sha256": "704a1d584d330445350a39d140cf019d06c184b22c59bc4aebaa660b1b6c841f",
-   "size": 11323876,
-   "url": "full/202611012203/geosite.dat",
+   "sha256": "98bce64d7d143524414bbc65e9999a738fbb7125630889e16e52005e15eac7c0",
+   "size": 11367966,
+   "url": "full/202611022204/geosite.dat",
    "patches": [
     {
-     "from": "e16ee9af893247f9c8b15c5259e5c0a6ae491b85ee351c22f1954e696ebb8997",
-     "url": "patches/202610242205-202611012203.geosite.dat.bsdiff",
-     "sha256": "b3c81e625cdec7db4c218fc182312ee04f29310f04cc8b95d281a9ec1a9ed561",
-     "size": 539085
-    },
-    {
      "from": "581e8886f032bb3fbff79bfd1b3a22f3e2ab76bca5c31db030e692339cc1ee7e",
-     "url": "patches/202610262207-202611012203.geosite.dat.bsdiff",
-     "sha256": "3301d10467a5295a76f89584da937539150981998386da3d331fd78271fae21f",
-     "size": 371758
+     "url": "patches/202610262207-202611022204.geosite.dat.bsdiff",
+     "sha256": "b910772ec15b69151b0be81b6246e4a64c042bd9013e7d3f0d667c5cd2b89f98",
+     "size": 414072
     },
     {
      "from": "206a76398c53cec2c84f96c5027b6f29ee8c03f3337fc2e4a7112c554fdb7ec5",
-     "url": "patches/202610272204-202611012203.geosite.dat.bsdiff",
-     "sha256": "1da510aed8b26b1c0afb9842578103e9735bfb28d426d55ec971dd6527b5022b",
-     "size": 361593
+     "url": "patches/202610272204-202611022204.geosite.dat.bsdiff",
+     "sha256": "135da1c55401ce97127107e8eb8f3fdbc3970bde33e49e4b4f703fae7e21bafb",
+     "size": 405347
     },
     {
      "from": "28f03a463ff51a1c8a1a839428628e745db21ba996c5b496bce384a8b0767a4e",
-     "url": "patches/202610282204-202611012203.geosite.dat.bsdiff",
-     "sha256": "be98500a00a57f7ccbbab3b70369701592cdaf80d9aa3da35e51ac077dafd3d6",
-     "size": 350025
+     "url": "patches/202610282204-202611022204.geosite.dat.bsdiff",
+     "sha256": "dafdf7d5fccdb56db48c5e3349dca2e492bf33985cc5a8c7691223bf4433c9cb",
+     "size": 392495
     },
     {
      "from": "5b7f02a431429140545e3b7f5fe542e30e346e98e6802c60c7fdef094412f7a6",
-     "url": "patches/202610292204-202611012203.geosite.dat.bsdiff",
-     "sha256": "ec833caf176aa86f7c3729485d16704af79a1e401ddafc84935e600e67244969",
-     "size": 337268
+     "url": "patches/202610292204-202611022204.geosite.dat.bsdiff",
+     "sha256": "357aac0d61a9da3e641602c08c5210af21f23e62c972a1c2a05975a70b67b24d",
+     "size": 382422
     },
     {
      "from": "5424b45285742debc038b0543ebc6d03c2be400519237879b3f146032e9bedf8",
-     "url": "patches/202610302203-202611012203.geosite.dat.bsdiff",
-     "sha256": "876cac396bb28cf693e68784194f026d735299af3e33f3cef2edde900aef4957",
-     "size": 314091
+     "url": "patches/202610302203-202611022204.geosite.dat.bsdiff",
+     "sha256": "f9763d9b3fc8418f2db05b08b1377e9c62fd90f9821509dfcaf649156f870a36",
+     "size": 359332
     },
     {
      "from": "de0ed52484ee4e793b63e3f9d9de9677e90b289483d96d94fa7f2d7503bdced0",
-     "url": "patches/202610312203-202611012203.geosite.dat.bsdiff",
-     "sha256": "d003f1153392c4e812c12630ae18460a97d1a5f2d1b927e15c06c1c986d76c14",
-     "size": 292196
+     "url": "patches/202610312203-202611022204.geosite.dat.bsdiff",
+     "sha256": "d27fe286280ccd54ebebdc859d6c8a5f8548c657359bc0f0c833dfcbb30abe5d",
+     "size": 340423
+    },
+    {
+     "from": "704a1d584d330445350a39d140cf019d06c184b22c59bc4aebaa660b1b6c841f",
+     "url": "patches/202611012203-202611022204.geosite.dat.bsdiff",
+     "sha256": "fd1263ab6de71e058dda15fcfdfee759f8c4e7e99faf7236a37e8fb41c55e4d2",
+     "size": 318501
     }
    ]
   }
